@@ -53,3 +53,14 @@ Author: Naël MULLER <nael.creepa@gmail.com>
 Date:   Thu Oct 15 16:23:47 2026 +0200
 
     Adresse mail de contact cliquable
+
+
+
+
+Ensuite, on switch sur main et on fait un merge :
+
+git merge feature/accueil
+git merge --continue
+
+git merge feature/contact
+git merge --continue
