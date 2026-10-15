@@ -66,3 +66,15 @@ git merge feature/contact
 git merge --continue
 
 git status
+
+
+# Intégrer une histoire concurrente
+
+git merge feature/tutorat
+git add index.html
+git --continue
+git status
+
+Les branches ont divergé car un même paragraphe avec le même identifiant unique avait deux contenus différents dans les deux branches.
+Pour résoudre le conflit, j'ai mis les deux textes dans un seul paragraphe.
+Toutes les informations sont ainsi conservées
