@@ -78,3 +78,21 @@ git status
 Les branches ont divergé car un même paragraphe avec le même identifiant unique avait deux contenus différents dans les deux branches.
 Pour résoudre le conflit, j'ai mis les deux textes dans un seul paragraphe.
 Toutes les informations sont ainsi conservées
+
+# Annuler une erreur déjà enregistrée
+git switch -c hotfix/duree e3b092b
+git revert b88cc98bf3fae11998895be8365305f22b2cc49c
+git log --oneline
+
+git switch main
+git merge hotfix/duree
+
+La durée affichée sur le site est maintennt bien à 20 minutes
+
+
+# Ajout au repo distant sur Github
+git remote add origin "https://github.com/CREEP4KA/A2-S2-CC-Na-l-MULLER"
+git push -u origin main
+git push -u origin feature/accueil
+git push -u origin feature/contact
+git push -u origin feature/tutorat
