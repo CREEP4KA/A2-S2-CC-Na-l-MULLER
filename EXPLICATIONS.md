@@ -64,3 +64,5 @@ git merge --continue
 
 git merge feature/contact
 git merge --continue
+
+git status
